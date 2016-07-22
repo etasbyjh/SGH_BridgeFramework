@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SAP2000v17">
+      <HintPath>..\..\..\AppData\Roaming\Grasshopper\Libraries\SAP2000v17.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,9 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Node\NodeManager.cs" />
+    <Compile Include="Node\SapNodeHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sap2000ModelUpdater.cs" />
+    <Compile Include="Sap2000v17_ModelHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Area\" />

@@ -9,9 +9,12 @@ namespace SghBridgeContract.Interfaces.Component
     /// <summary>
     /// This inteface is implemented by libraries that exchange data with bridge Framework
     /// </summary>
-    public interface IModelUpdater
+    public interface IModelHandler
     {
-        void  AddPoint(IPointDTO p);
+        void SetModel(IModelDTO mo);
+        IModelDTO GetModel();
+
+        void  SetPoint(IPointDTO p);
         IPointDTO GetPoint(string Id);
 
 

@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SghBridgeContract.Enums;
 
 namespace SghBridgeContract.Interfaces
 {
-    public interface IPointDTO
+    public interface IModelDTO
     {
-        string name { get; set; }
-        double X { get; set; }
-        double Y { get; set; }
-        double Z { get; set; }
+
     }
 }

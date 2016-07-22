@@ -40,17 +40,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO\Base\ModelDTOBase.cs" />
     <Compile Include="DTO\Base\PointDTOBase.cs" />
-    <Compile Include="DTO\Revit\Point\RevitPointDTO.cs" />
-    <Compile Include="DTO\Sap2000\PointLoadDTO.cs" />
-    <Compile Include="DTO\Sap2000\PointSupportConditionDTO.cs" />
-    <Compile Include="DTO\Sap2000\SapNodeDTO.cs" />
-    <Compile Include="Interfaces\Component\IModelUpdater.cs" />
+    <Compile Include="DTO\Revit2016\Objects\RevitPointDTO.cs" />
+    <Compile Include="DTO\Sap2000v17\Model\SapModelDTO.cs" />
+    <Compile Include="DTO\Sap2000v17\ObjectProperties\PointLoadDTO.cs" />
+    <Compile Include="DTO\Sap2000v17\ObjectProperties\PointSupportConditionDTO.cs" />
+    <Compile Include="DTO\Sap2000v17\Objects\SapNodeDTO.cs" />
+    <Compile Include="Enums\eApplication.cs" />
+    <Compile Include="Interfaces\Component\IModelHandler.cs" />
+    <Compile Include="Interfaces\IModelDTO.cs" />
     <Compile Include="Interfaces\IPointDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DTO\GH\" />
+    <Folder Include="DTO\Revit2016\ModelProperties\" />
+    <Folder Include="DTO\Revit2016\ObjectProperties\" />
+    <Folder Include="DTO\Sap2000v17\ModelProperties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

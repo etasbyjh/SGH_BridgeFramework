@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SghBridgeContract.DTO.Sap2000
+namespace SghBridgeContract.DTO.Sap2000v17.ObjectProperties
 {
    public class PointLoadDTO
     {

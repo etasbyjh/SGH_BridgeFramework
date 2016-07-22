@@ -1,11 +1,13 @@
-﻿using SghBridgeContract.Interfaces;
+﻿using SghBridgeContract.DTO.Base;
+using SghBridgeContract.DTO.Sap2000v17.ObjectProperties;
+using SghBridgeContract.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SghBridgeContract.DTO.Sap2000
+namespace SghBridgeContract.DTO.Sap2000v17.Objects
 {
     /// <summary>
     /// Specific information special to SAP2000 node object

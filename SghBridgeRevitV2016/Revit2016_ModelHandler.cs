@@ -8,9 +8,9 @@ using SghBridgeContract.Interfaces;
 
 namespace SghBridgeRevitV2016
 {
-    public class RevitModelUpdater : IModelUpdater
+    public class Revit2016_ModelHandler : IModelHandler
     {
-        public void AddPoint(IPointDTO p)
+        public void SetPoint(IPointDTO p)
         {
             throw new NotImplementedException();
         }

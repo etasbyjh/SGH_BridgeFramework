@@ -40,9 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common\PointCommon.cs" />
+    <Compile Include="CommonObjects\ModelCommon.cs" />
+    <Compile Include="CommonObjects\PointCommon.cs" />
+    <Compile Include="BridgeController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SapBridgeController.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SghBridgeContract\SghBridgeContract.csproj">
