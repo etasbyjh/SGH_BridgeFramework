@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SghBridgeDesktop", "SghBridgeDesktop\SghBridgeDesktop\SghBridgeDesktop.csproj", "{D01E1B55-33D3-4CA9-8E57-95BB74FCB206}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SghBridgeContract", "SghBridgeContract\SghBridgeContract.csproj", "{CC5E7C0C-3FB4-4F18-A7C2-0B3D0A5C7810}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SghBridgeController", "SghBridgeController\SghBridgeController.csproj", "{57705DDB-982A-4BD6-AFFB-0EB6AA9BCB90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SghBridgeSap2000v17", "SghBridgeSap2000v17\SghBridgeSap2000v17.csproj", "{747E5021-0B15-40F8-852A-D8184CDFF955}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SghBridgeGH", "SghBridgeGH\SghBridgeGH.csproj", "{9BD07FE0-E56E-4F05-8F56-471EC9F70263}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SghBridgeRevitV2016", "SghBridgeRevitV2016\SghBridgeRevitV2016.csproj", "{543A571C-94E6-4199-8627-32A2634C5C4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D01E1B55-33D3-4CA9-8E57-95BB74FCB206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D01E1B55-33D3-4CA9-8E57-95BB74FCB206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D01E1B55-33D3-4CA9-8E57-95BB74FCB206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D01E1B55-33D3-4CA9-8E57-95BB74FCB206}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC5E7C0C-3FB4-4F18-A7C2-0B3D0A5C7810}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC5E7C0C-3FB4-4F18-A7C2-0B3D0A5C7810}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC5E7C0C-3FB4-4F18-A7C2-0B3D0A5C7810}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC5E7C0C-3FB4-4F18-A7C2-0B3D0A5C7810}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57705DDB-982A-4BD6-AFFB-0EB6AA9BCB90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57705DDB-982A-4BD6-AFFB-0EB6AA9BCB90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57705DDB-982A-4BD6-AFFB-0EB6AA9BCB90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57705DDB-982A-4BD6-AFFB-0EB6AA9BCB90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{747E5021-0B15-40F8-852A-D8184CDFF955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{747E5021-0B15-40F8-852A-D8184CDFF955}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{747E5021-0B15-40F8-852A-D8184CDFF955}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{747E5021-0B15-40F8-852A-D8184CDFF955}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BD07FE0-E56E-4F05-8F56-471EC9F70263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BD07FE0-E56E-4F05-8F56-471EC9F70263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BD07FE0-E56E-4F05-8F56-471EC9F70263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BD07FE0-E56E-4F05-8F56-471EC9F70263}.Release|Any CPU.Build.0 = Release|Any CPU
+		{543A571C-94E6-4199-8627-32A2634C5C4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{543A571C-94E6-4199-8627-32A2634C5C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{543A571C-94E6-4199-8627-32A2634C5C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{543A571C-94E6-4199-8627-32A2634C5C4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
