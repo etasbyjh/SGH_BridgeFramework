@@ -1,5 +1,5 @@
 ﻿using SghBridgeContract.DTO.Base;
-using SghBridgeContract.DTO.Sap2000v17.ObjectProperties;
+using SghBridgeContract.DTO.Sap2000v17.ObjectsProperties;
 using SghBridgeContract.Interfaces;
 using System;
 using System.Collections.Generic;

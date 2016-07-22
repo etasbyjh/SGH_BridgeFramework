@@ -20,7 +20,7 @@ namespace SghBridgeController
     public class BridgeController
     {
         public List<PointCommon> modelPointObjs { get; set; }
-        public BridgeController model { get; set; }
+        public ModelCommon model { get; set; }
 
         public void ControlData_FromRevit2016ToSAP2000v17()
         {
@@ -30,7 +30,7 @@ namespace SghBridgeController
             //example
 
             //get points from Revit first
-            SapModelDTO sapMo = model as SapModelDTO;
+            SapModelDTO sapMo = model.SapModelInfo;
             sapUpd.SetModel(sapMo);
 
             foreach (var point in modelPointObjs)

@@ -44,8 +44,8 @@
     <Compile Include="DTO\Base\PointDTOBase.cs" />
     <Compile Include="DTO\Revit2016\Objects\RevitPointDTO.cs" />
     <Compile Include="DTO\Sap2000v17\Model\SapModelDTO.cs" />
-    <Compile Include="DTO\Sap2000v17\ObjectProperties\PointLoadDTO.cs" />
-    <Compile Include="DTO\Sap2000v17\ObjectProperties\PointSupportConditionDTO.cs" />
+    <Compile Include="DTO\Sap2000v17\ObjectsProperties\PointLoadDTO.cs" />
+    <Compile Include="DTO\Sap2000v17\ObjectsProperties\PointSupportConditionDTO.cs" />
     <Compile Include="DTO\Sap2000v17\Objects\SapNodeDTO.cs" />
     <Compile Include="Enums\eApplication.cs" />
     <Compile Include="Interfaces\Component\IModelHandler.cs" />
@@ -56,7 +56,8 @@
   <ItemGroup>
     <Folder Include="DTO\GH\" />
     <Folder Include="DTO\Revit2016\ModelProperties\" />
-    <Folder Include="DTO\Revit2016\ObjectProperties\" />
+    <Folder Include="DTO\Revit2016\Model\" />
+    <Folder Include="DTO\Revit2016\ObjectsProperties\" />
     <Folder Include="DTO\Sap2000v17\ModelProperties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

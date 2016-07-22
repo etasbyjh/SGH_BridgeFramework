@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SghBridgeContract.DTO.Sap2000v17.ObjectProperties
+namespace SghBridgeContract.DTO.Sap2000v17.ObjectsProperties
 {
     public class PointSupportConditionDTO
     {
