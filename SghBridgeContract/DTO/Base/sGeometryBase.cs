@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SghBridgeContract.DTO.Base
 {
-    public class ModelDTOBase : IsGeometry
+    public class sGeometryBase : IsGeometry
     {
 
     }

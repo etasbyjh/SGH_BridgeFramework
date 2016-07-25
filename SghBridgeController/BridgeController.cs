@@ -24,21 +24,20 @@ namespace SghBridgeController
 
         public void ControlData_FromRevit2016ToSAP2000v17()
         {
-            Sap2000v17_ModelHandler sapUpd = new Sap2000v17_ModelHandler();
-            Revit2016_ModelHandler revUpd = new Revit2016_ModelHandler();
+            Sap2000v17_ModelHandler sap17_han = new Sap2000v17_ModelHandler();
+            Revit2016_ModelHandler rvt16_han = new Revit2016_ModelHandler();
 
             //example
 
             //get points from Revit first
             SapModelDTO sapMo = model.SapModelInfo;
-            sapUpd.SetModel(sapMo);
 
             foreach (var point in modelPointObjs)
             {
                 //RevitPointDTO rp = point.RevitInfo;
                 SapNodeDTO sp = point.SapInfo;
 
-                sapUpd.SetPoint(sp);
+                sap17_han.SetPoint(sp);
 
 
                 // dont forget to erase this example

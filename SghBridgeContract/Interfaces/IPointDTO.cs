@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SghBridgeContract.DTO.sGeometry;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +9,9 @@ namespace SghBridgeContract.Interfaces
 {
     public interface IPointDTO
     {
-        string name { get; set; }
-        double X { get; set; }
-        double Y { get; set; }
-        double Z { get; set; }
+        string objName { get; set; }
+        Guid objID { get; set; }
+        sVector point { get; set; }
+        bool IsGlobalCoSys { get; set; }
     }
 }

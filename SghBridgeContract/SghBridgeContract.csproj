@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO\Base\sGeometryBase.cs" />
     <Compile Include="DTO\Base\ModelDTOBase.cs" />
     <Compile Include="DTO\Base\PointDTOBase.cs" />
     <Compile Include="DTO\Revit2016\Objects\RevitPointDTO.cs" />
@@ -47,10 +48,11 @@
     <Compile Include="DTO\Sap2000v17\ObjectsProperties\PointLoadDTO.cs" />
     <Compile Include="DTO\Sap2000v17\ObjectsProperties\PointSupportConditionDTO.cs" />
     <Compile Include="DTO\Sap2000v17\Objects\SapNodeDTO.cs" />
-    <Compile Include="Enums\eApplication.cs" />
+    <Compile Include="DTO\sGeometry\sVector.cs" />
     <Compile Include="Interfaces\Component\IModelHandler.cs" />
     <Compile Include="Interfaces\IModelDTO.cs" />
     <Compile Include="Interfaces\IPointDTO.cs" />
+    <Compile Include="Interfaces\IsGeometry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

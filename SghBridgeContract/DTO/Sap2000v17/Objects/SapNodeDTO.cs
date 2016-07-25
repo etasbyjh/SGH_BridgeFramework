@@ -1,5 +1,6 @@
 ﻿using SghBridgeContract.DTO.Base;
 using SghBridgeContract.DTO.Sap2000v17.ObjectsProperties;
+using SghBridgeContract.DTO.sGeometry;
 using SghBridgeContract.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,7 @@ namespace SghBridgeContract.DTO.Sap2000v17.Objects
     /// </summary>
     public class SapNodeDTO : PointDTOBase
     {
+        public bool IsStructural { get; set; }
         public List<PointLoadDTO> PointLoads { get; set; }
         public PointSupportConditionDTO SupportCondition {get; set;}
     }
