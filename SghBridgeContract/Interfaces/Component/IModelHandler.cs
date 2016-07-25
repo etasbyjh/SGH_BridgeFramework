@@ -11,13 +11,16 @@ namespace SghBridgeContract.Interfaces.Component
     /// </summary>
     public interface IModelHandler
     {
+        bool IsInitiated { get; set; }
+
         void SetModel(IModelDTO mo);
         IModelDTO GetModel();
 
         void  SetPoint(IPointDTO p);
         IPointDTO GetPoint(string Id);
 
-
+        void SetAllPoints(List<IPointDTO> Ipoints);
+        List<IPointDTO> GetAllPoints();
 
     }
 }

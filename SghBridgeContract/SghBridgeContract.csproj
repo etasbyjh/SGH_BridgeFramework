@@ -43,7 +43,9 @@
     <Compile Include="DTO\Base\sGeometryBase.cs" />
     <Compile Include="DTO\Base\ModelDTOBase.cs" />
     <Compile Include="DTO\Base\PointDTOBase.cs" />
+    <Compile Include="DTO\Revit2016\Model\RevitModelDTO.cs" />
     <Compile Include="DTO\Revit2016\Objects\RevitPointDTO.cs" />
+    <Compile Include="DTO\Sap2000v17\ModelProperties\sapLoadComboDTO.cs" />
     <Compile Include="DTO\Sap2000v17\Model\SapModelDTO.cs" />
     <Compile Include="DTO\Sap2000v17\ObjectsProperties\PointLoadDTO.cs" />
     <Compile Include="DTO\Sap2000v17\ObjectsProperties\PointSupportConditionDTO.cs" />
@@ -58,9 +60,7 @@
   <ItemGroup>
     <Folder Include="DTO\GH\" />
     <Folder Include="DTO\Revit2016\ModelProperties\" />
-    <Folder Include="DTO\Revit2016\Model\" />
     <Folder Include="DTO\Revit2016\ObjectsProperties\" />
-    <Folder Include="DTO\Sap2000v17\ModelProperties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

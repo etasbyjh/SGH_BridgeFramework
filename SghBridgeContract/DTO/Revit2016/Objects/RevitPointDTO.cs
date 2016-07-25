@@ -13,6 +13,6 @@ namespace SghBridgeContract.DTO.Revit2016.Objects
     /// </summary>
     public class RevitPointDTO : PointDTOBase
     {
-        Guid Id { get; set; }
+
     }
 }

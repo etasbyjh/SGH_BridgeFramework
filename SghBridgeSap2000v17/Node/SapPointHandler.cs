@@ -1,23 +1,24 @@
-﻿using SghBridgeContract.DTO.Sap2000v17.Objects;
-using SghBridgeContract.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 using SAP2000v17;
+using SghBridgeContract.DTO.Sap2000v17.Objects;
 using SghBridgeContract.DTO.Sap2000v17.ObjectsProperties;
+using SghBridgeContract.Interfaces;
 using SghBridgeContract.DTO.sGeometry;
+
 
 namespace SghBridgeSap2000v17.Node
 {
     /// <summary>
     /// Logic to manipulate nodes in SAP
     /// </summary>
-   public  class SapNodeHandler
+   public  class SapPointHandler
     {
-        public void SetNode(IPointDTO p, cSapModel sap_mo)
+        public void SetSAPPoint(IPointDTO p, cSapModel sap_mo)
         {
             SapNodeDTO sap_dp = p as SapNodeDTO;
 
@@ -53,7 +54,7 @@ namespace SghBridgeSap2000v17.Node
 
             //anything else?
         }
-        public IPointDTO GetNode(string sapObjName, cSapModel sap_mo, string coSys = "Global")
+        public IPointDTO GetSAPPoint(string sapObjName, cSapModel sap_mo, string coSys = "Global")
         {
             SapNodeDTO sapnode = new SapNodeDTO();
             sapnode.objName = sapObjName;
@@ -79,6 +80,30 @@ namespace SghBridgeSap2000v17.Node
             UpdateGroundTran_Rotation(sapObjName, sap_mo, ref sapnode);
 
             return sapnode;
+        }
+
+        public void SetAllSAPPoints(List<IPointDTO> Ipoints, cSapModel sap_mo)
+        {
+            foreach(IPointDTO ip in Ipoints)
+            {
+                SetSAPPoint(ip, sap_mo);
+            }
+        }
+        public List<IPointDTO> GetAllSAPPoints(cSapModel sap_mo, string coSys = "Global")
+        {
+            int nodeCount = 0;
+            string[] nodeNames = null;
+            sap_mo.PointObj.GetNameList(ref nodeCount, ref nodeNames);
+            List<IPointDTO> nodes = new List<IPointDTO>();
+            if(nodeCount > 0)
+            {
+                for(int i = 0; i < nodeNames.Length; ++i)
+                {
+                    nodes.Add(GetSAPPoint(nodeNames[i], sap_mo, coSys));
+                }
+            }
+
+            return nodes;
         }
 
         private void UpdateRestraints(string sapObjName, cSapModel sap_mo, ref SapNodeDTO snd)
