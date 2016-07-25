@@ -43,7 +43,7 @@ namespace SghBridgeController
             }
             else
             {
-                return "Initiate SAP Model";
+                return "Initiate Model Handler";
             }
         }
 
@@ -63,7 +63,7 @@ namespace SghBridgeController
             }
             else
             {
-                return "Initiate SAP Model";
+                return "Initiate Model Handler";
             }
         }
 
